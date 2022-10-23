@@ -1,0 +1,35 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	padding: rem(20) rem(50);
+	color: $black;
+	background-color: $lightGreen;
+	display: inline-block;
+	border-radius: 8px;
+	font-size: rem(18);
+	font-weight: 500;
+	line-height: math.div(21, 18);
+
+	&_white {
+		background-color: transparent;
+		border: 1.5px solid #DEDEDE;
+		transition: all 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #fff;
+			}
+		}
+	}
+
+	&_wide-tablet {
+		@media (max-width:$tablet) {
+			width: 100%;
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {}
+	}
+}
